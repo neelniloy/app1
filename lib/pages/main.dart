@@ -1,3 +1,4 @@
+import 'package:app1/pages/list_view.dart';
 import 'package:flutter/material.dart';
 
 main(){
@@ -312,6 +313,18 @@ class HomeActivity extends StatelessWidget{
                   ),
                 style: submitBtnStyle,
               ),
+            ),
+            SizedBox(height: 30),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ElevatedButton(onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>
+                      DemoList()
+                  )
+                  );
+                  }, child: Text("Go to Next Page")),
+              ],
             ),
           ],
         ),
