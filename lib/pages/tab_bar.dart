@@ -1,3 +1,10 @@
+import 'package:app1/pages/tab/camera_page.dart';
+import 'package:app1/pages/tab/cart_page.dart';
+import 'package:app1/pages/tab/chat_page.dart';
+import 'package:app1/pages/tab/gallery_page.dart';
+import 'package:app1/pages/tab/home_page.dart';
+import 'package:app1/pages/tab/mail_page.dart';
+import 'package:app1/pages/tab/profile_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -30,6 +37,17 @@ class TabBarPage extends StatelessWidget{
               Tab(icon: Icon(Icons.account_circle),text: "Profile"),
             ],
           ),
+        ),
+        body: TabBarView(
+          children: [
+            HomePage(),
+            CartPage(),
+            MailPage(),
+            ChatPage(),
+            CameraPage(),
+            GalleryPage(),
+            ProfilePage()
+          ],
         ),
       ),
     );
