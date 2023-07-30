@@ -67,7 +67,7 @@ class DemoList extends StatelessWidget{
               margin: EdgeInsets.fromLTRB(0, 20, 0, 20),
               child: ElevatedButton(onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>
-                    TabBarPage()
+                    TabBarPage("This is a Tab Bar View")
                 )
                 );
               }, child: Text("Go to Tab Page")),

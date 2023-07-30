@@ -10,6 +10,13 @@ import 'package:flutter/material.dart';
 
 class TabBarPage extends StatelessWidget{
 
+  String tabTitle;
+  TabBarPage(
+      this.tabTitle,
+      {super.key}
+      );
+
+
   customSnackbar(context,message){
     return ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text(message))
@@ -24,7 +31,7 @@ class TabBarPage extends StatelessWidget{
       length: 8,
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Tab View"),
+          title: Text(tabTitle),
           bottom: TabBar(
             isScrollable: true,
             tabs: [
