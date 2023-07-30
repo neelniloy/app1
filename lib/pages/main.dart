@@ -315,6 +315,24 @@ class HomeActivity extends StatelessWidget{
               ),
             ),
             SizedBox(height: 30),
+            Container(
+              child: Card(
+                color: Colors.deepOrange,
+                child: SizedBox(
+                  height: 200,
+                  width: 200,
+                  child: Center(
+                    child: Text('This is Card',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.white
+                    )),
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 30),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
